@@ -35,8 +35,8 @@ export default function CustomCursor() {
       }
     };
 
-    const handleMouseDown = () => setIsClicked(true);
-    const handleMouseUp = () => setIsClicked(false);
+    const handleMouseDown = () => {};
+    const handleMouseUp = () => {};
 
     window.addEventListener('mousemove', moveCursor);
     window.addEventListener('mouseover', handleMouseOver);
@@ -64,11 +64,11 @@ export default function CustomCursor() {
           translateY: '-50%',
         }}
         animate={{
-          scale: isClicked ? 0.9 : isHovering ? 2 : 1,
+          scale: isHovering ? 2 : 1,
         }}
       />
       <motion.div
-        className="fixed top-0 left-0 w-10 h-10 border border-white/20 rounded-full pointer-events-none z-[9998] will-change-transform"
+        className="fixed top-0 left-0 w-10 h-10 border border-white/10 rounded-full pointer-events-none z-[9998] will-change-transform"
         style={{
           x: springX,
           y: springY,
@@ -76,8 +76,8 @@ export default function CustomCursor() {
           translateY: '-50%',
         }}
         animate={{
-          scale: isClicked ? 1.2 : isHovering ? 0 : 1,
-          opacity: isClicked ? 0.3 : 1,
+          scale: isHovering ? 0 : 1,
+          opacity: isHovering ? 0 : 1,
         }}
       />
     </>

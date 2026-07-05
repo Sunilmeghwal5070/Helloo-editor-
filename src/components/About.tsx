@@ -12,11 +12,12 @@ export default function About() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="aspect-[4/5] rounded-3xl overflow-hidden glass border border-white/10">
+            <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden glass border border-white/10 group relative">
+              <div className="absolute inset-0 bg-brand-accent/5 mix-blend-overlay group-hover:bg-transparent transition-all duration-700" />
               <img
-                src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&q=80"
+                src="https://i.pinimg.com/474x/82/36/29/8236290ddc913e1d6e70f86218b28e43.jpg"
                 alt="Sunil - HELLOO EDITOR"
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"
               />
             </div>
             <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-brand-accent/30 rounded-full blur-[64px]" />

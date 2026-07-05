@@ -37,8 +37,9 @@ export default function Services() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
                 whileHover={{ y: -10 }}
-                className="group p-8 glass border-white/5 hover:border-brand-accent/50 transition-all rounded-3xl"
+                className="group p-8 glass border-white/5 hover:border-brand-accent/30 transition-all rounded-[2.5rem] relative overflow-hidden"
               >
+                <div className="absolute top-0 right-0 w-32 h-32 bg-brand-accent/5 blur-3xl -mr-16 -mt-16 group-hover:bg-brand-accent/10 transition-all" />
                 <div className="w-14 h-14 bg-brand-accent/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-brand-accent group-hover:text-black transition-colors">
                   <IconComponent className="w-6 h-6 text-brand-accent group-hover:text-black" />
                 </div>

@@ -35,10 +35,10 @@ export default function Pricing() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className={`relative p-8 rounded-[2.5rem] border ${
+              className={`relative p-8 rounded-[2.5rem] border transition-all duration-500 hover:shadow-[0_0_50px_rgba(255,204,0,0.15)] ${
                 plan.isPopular 
                   ? 'bg-brand-accent/5 border-brand-accent shadow-[0_0_40px_rgba(255,204,0,0.1)]' 
-                  : 'glass border-white/5'
+                  : 'glass border-white/10 hover:border-brand-accent/30'
               }`}
             >
               {plan.isPopular && (

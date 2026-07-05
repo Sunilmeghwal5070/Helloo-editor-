@@ -15,11 +15,14 @@
   * {
     -webkit-tap-highlight-color: transparent !important;
     outline: none !important;
+    -webkit-focus-ring-color: transparent !important;
   }
   body {
     @apply bg-brand-bg text-white font-sans antialiased selection:bg-brand-accent/30;
     cursor: none;
     user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
   }
   
   /* Allow selection only for specific elements if needed, or keep it off for portfolio feel */
