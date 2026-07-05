@@ -1,0 +1,8 @@
+{
+  "name": "Helloo Editor Portfolio",
+  "description": "Premium personal portfolio for HELLOO EDITOR, a professional video editor and motion designer specializing in cinematic storytelling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
